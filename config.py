@@ -24,7 +24,7 @@ API_ID = int(environ.get("API_ID", "21994822"))
 API_HASH = environ.get("API_HASH", "3d2430972bb360876864a636f0f06015")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/d6e3a7c39df4ad0372966.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://i.imgur.com/3cDFt3g.jpeg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7014391442').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Sitefilesto_bot") # without @
 PORT = environ.get("PORT", "8080")
@@ -58,11 +58,11 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "publicearn.com") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "de08290b12d9e34191f3a057070a50a18187fff3") # shortlink api
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "gplinks.com") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "d6ba67f5ea7fd09b2402c2ef11ce88e8b9176053") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/DowPCMOffcL/13") # how to open link 
 
 # Website Info:
